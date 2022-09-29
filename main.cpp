@@ -37,7 +37,7 @@ struct Pixel {
     uint8_t red = 255;
 } pixel;
 int licznik=0;
-
+//dodalam nowy komentarz
 int main(int argc, char **argv) {
      FILE * f = fopen("test.bmp", "rb");
      FILE * f1 = fopen("wynik.bmp", "wb");
@@ -59,7 +59,7 @@ int main(int argc, char **argv) {
     cout<<"wysokosc: "<<height<<endl;
     cout<<"wielkosc naglowka: "<<bmpInfoHeader.sizeOfThisHeader<<endl;
     cout<<"liczba warstw kolorow: "<<bmpInfoHeader.numberOfColorPlanes<<endl;
-    cout<<"liczba bit�w na pixel: "<<bmpInfoHeader.colorDepth <<endl;
+    cout<<"liczba bitow na pixel: "<<bmpInfoHeader.colorDepth <<endl;
     cout<<"pozioma rozdzielczosc (px/m): "<<bmpInfoHeader.horizontalResolution<<endl;
     cout<<"pionowa rozdzielczosc (px/m): "<<bmpInfoHeader.verticalResolution<<endl;
 
@@ -104,9 +104,6 @@ int main(int argc, char **argv) {
         licznik += 1;
         img[licznik] =  255-(unsigned char) image[i][2];
         licznik += 1;
-
-       // printf("pixel %d : [%d,%d,%d]\n", i + 1, image[i][0], image[i][1], image[i][2]);
-      //  fprintf(pixelVals, "pixel %d : [%d,%d,%d]\n", i + 1, image[i][0], image[i][5], image[i][2]);
     pixel.red=image[i][0];
     pixel.green=image[i][2];
     pixel.blue=image[i][2];
@@ -124,6 +121,6 @@ int main(int argc, char **argv) {
     fout.close();
 
 
-    return 0;
+    return 250;
 
 }
