@@ -37,6 +37,12 @@ struct Pixel {
     uint8_t red = 255;
 } pixel;
 int licznik=0;
+
+int test()
+{
+    cout<<"Test"<<endl;
+
+}
 //dodalam nowy komentarz
 int main(int argc, char **argv) {
      FILE * f = fopen("test.bmp", "rb");
