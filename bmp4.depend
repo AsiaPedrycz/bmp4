@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1663485754 source:c:\users\przemek\documents\programowanie\cpp\bmp4\bmp4\main.cpp
+	<iostream>
+	<cstdint>
+	<fstream>
+
