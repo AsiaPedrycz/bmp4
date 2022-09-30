@@ -38,10 +38,14 @@ struct Pixel {
 } pixel;
 int licznik=0;
 
-int test()
+int powitanie()
 {
-    cout<<"Test"<<endl;
-
+    cout<<"================================================"<<endl;
+    cout<<"                   Program BMP"<<endl;
+    cout<<"================================================"<<endl;
+    cout<<"-pobierania informacji z naglowka"<<endl;
+    cout<<"-tworzenie negatywu"<<endl;
+    cout<<"================================================"<<endl;
 }
 //dodalam nowy komentarz
 int main(int argc, char **argv) {
@@ -60,6 +64,7 @@ int main(int argc, char **argv) {
     fread(info, sizeof(unsigned char), 54, f);
     int width = * (int * ) & info[18];
     int height = * (int * ) & info[22];
+    powitanie;
 
     cout<<"szerokosc: "<<width<<endl;
     cout<<"wysokosc: "<<height<<endl;
