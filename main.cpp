@@ -47,6 +47,18 @@ int powitanie()
     cout<<"-tworzenie negatywu"<<endl;
     cout<<"================================================"<<endl;
 }
+
+int zakonczenie()
+{
+    cout<<"================================================"<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<"Zakonczono dzialanie programu"<<endl;
+    cout<<endl;
+    cout<<"================================================"<<endl;
+}
+
+
 //dodalam nowy komentarz
 int main(int argc, char **argv) {
      FILE * f = fopen("test.bmp", "rb");
@@ -130,7 +142,7 @@ int main(int argc, char **argv) {
     fclose(f);
     fclose(f1);
     fout.close();
-
+    zakonczenie;
 
     return 250;
 
